@@ -138,7 +138,7 @@ Calculando a média por mecanismo é possível verificar que para os mecanismos 
 
 Para fazer uma análise mais adequada podemos calcular o intervalos de confiança (IC) e o testes de hipóteses (TH) para comprovar que realmente esses dois mecanismos representam de maneira fiel a representação entre os outros mecanismos.
 
-# Intervalos de Confiança
+# Gerando o Intervalos de Confiança
 
 Vamos agora calcular o IC, com 95% de confiança, realizando o bootstrap por meio da biblioteca boot. Com a finalidade de estimar o valor da média das avaliações de cada mecanismo para podermos avaliar qual o mecanimso teve o melhor desempenho.
 
@@ -186,13 +186,7 @@ ci %>%
         )
 ```
 
-É possível verificar que o IC e os valores da estatística theta, podemos afirmar com 95% de confiança que os mecanismos e seus valores são:
-
-Para o baseline a média das avaliações é 2.130435, IC [1.860000, 2.389918];
-Para o like/dislike a média das avaliações é 3.652174, IC [3.434835, 3.886364];
-Para o skip a média das avaliações é 2.521739, IC [2.295455, 2.717391];
-Para o combined a média das avaliações é 4.043478, IC [3.805556, 4.250000]; e
-Para o up/downvoting a média das avaliações é 4.391304, IC [4.225000, 4.590474].
+É possível verificar que o IC e os valores da estatística theta, podemos afirmar com 95% de confiança que os mecanismos e seus valores são: a) Para o baseline a média das avaliações é 2.130435, IC [1.860000, 2.389918]; b) Para o like/dislike a média das avaliações é 3.652174, IC [3.434835, 3.886364]; c) Para o skip a média das avaliações é 2.521739, IC [2.295455, 2.717391]; d) Para o combined a média das avaliações é 4.043478, IC [3.805556, 4.250000]; e e)Para o up/downvoting a média das avaliações é 4.391304, IC [4.225000, 4.590474].
 
 É possível comprovar que os dois mecanismos mais bem avaliados são up/downvoting e combined, também podemos verificar que existe uma sobreposição dos IC entre eles. Vamos então estimar a diferença entre o up/downvoting e os demais (skip, baseline e like/dislike) para uma analisarmos melhor e identifiicar o nível de significancia ou não.
 
@@ -251,7 +245,7 @@ Por último a relação com o mecanismo de like/dislike a diferença é de 0.739
 
 Os IC foi contruídos com 95% de confiança, para os resultados obtidos.
 
-# Testes de Hipóteses
+# Gerando os calculos para o Testes de Hipóteses
 
 Agora vamos utilizar o TH (para H0 e H1) para estimar a diferença entre o up/downvoting e os demais mecanismos (baseline, skip, like/dislike), seguindo o mesmo raciocício dos IC.
 
