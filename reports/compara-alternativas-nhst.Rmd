@@ -82,7 +82,7 @@ sum(abs(diffs) >= abs(theta_chapeu)) / length(diffs)
 ```
 
 
-# Análise preliminar dos dados
+# Análise dos dados
 
 Inicialmente vamos construir uma representação gráfica dos mecanismos e suas respectivas votações dentro de um histograma.
 
